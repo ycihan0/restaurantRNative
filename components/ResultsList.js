@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import React from "react";
 import ResultDetails from "./ResultDetails";
+useNavi
 
 export default function ResultsList({ title, results }) {
   return (
@@ -18,7 +19,7 @@ export default function ResultsList({ title, results }) {
         data={results}
         renderItem={({ item }) => {
           return (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>}>
               <ResultDetails result={item} />
             </TouchableOpacity>
           );
