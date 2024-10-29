@@ -21,7 +21,7 @@ export default function ResultsList({ title, results }) {
         renderItem={({ item }) => {
           return (
             <TouchableOpacity
-              onPress={() => navigation.navigate("", { id: item.id })}
+              onPress={() => navigation.navigate("ResultShow", { id: item.id })}
             >
               <ResultDetails result={item} />
             </TouchableOpacity>
