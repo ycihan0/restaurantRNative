@@ -7,9 +7,10 @@ import {
 } from "react-native";
 import React from "react";
 import ResultDetails from "./ResultDetails";
-useNavi
+import { useNavigation } from "@react-navigation/native";
 
 export default function ResultsList({ title, results }) {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title} </Text>
@@ -19,7 +20,9 @@ export default function ResultsList({ title, results }) {
         data={results}
         renderItem={({ item }) => {
           return (
-            <TouchableOpacity onPress={()=>}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("", { id: item.id })}
+            >
               <ResultDetails result={item} />
             </TouchableOpacity>
           );
