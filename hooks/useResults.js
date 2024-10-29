@@ -4,14 +4,18 @@ import yelp from "../api/yelp";
 export default () => {
   const [result, setResult] = useState([]);
   const searchApi = async (searchTerm) => {
-    const response = await yelp.get("/search", {
-      params: {
-        limit: 50,
-        sort_by: searchTerm,
-        location: "İstanbul",
-      },
-    });
-    setResult(response.data.businesses);
+    try {
+      const response = await yelp.get("/search", {
+        params: {
+          limit: 50,
+          term: searchTerm,
+          location: "İstanbul",
+        },
+      });
+      setResult(response.data.businesses);
+    } catch (error) {
+      console.log(error);
+    }
   };
   useEffect(() => {
     searchApi("best_match");
