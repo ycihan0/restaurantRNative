@@ -35,10 +35,18 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 2. Bağımlılıkları yükleyin:
 ```bash
 npm install
+```
 3. Expo'yu başlatın:
 ```bash
 expo start
-4. Uygulamayı Android veya iOS cihazınızda çalıştırın
-Android: npm run android
+```
+4. Uygulamayı Android veya iOS cihazınızda çalıştırın:
+   
+Android:
+```bash
+npm run android
+```
+```bash
 iOS: npm run ios
+```
 
