@@ -2,8 +2,8 @@
 
 Bu proje, React Native ve Expo kullanarak geliştirilmiş bir restoran keşif uygulamasıdır. Yelp API'sini kullanarak restoranlar hakkında bilgi sağlar ve kullanıcıların restoranları fiyat kategorilerine göre listelemelerine ve fiyat aralıklarına göre "Ucuz", "Uygun", "Pahalı" ve "Lüks" kategorilerde restoranları görüntülemenize olanak tanır.
 
- ##📸 Ekran Görüntüleri
- ![Screenshot_1730287518](https://github.com/user-attachments/assets/c810b26f-22a8-4202-8781-35229d847c2f)
+ ## 📸 Ekran Görüntüleri
+![Screenshot_1730287518](https://github.com/user-attachments/assets/c810b26f-22a8-4202-8781-35229d847c2f)
 ![Screenshot_1730287572](https://github.com/user-attachments/assets/315b5c21-c860-406b-8136-8129ea938da9)
 ![screenshot](https://github.com/user-attachments/assets/e4dd529c-6cce-4514-a9a9-0a5940f65cd4)
 
