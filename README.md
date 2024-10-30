@@ -46,7 +46,31 @@ Android:
 ```bash
 npm run android
 ```
+iOS:
 ```bash
-iOS: npm run ios
+ npm run ios
+```
+ ## 📂 Proje Yapısı
+ ```graphql
+📦 RESTAURANTRNATIVE
+├── 📂 .expo              # Expo ile ilgili ayarlar
+├── 📂 api
+│   └── 📝 yelp.js        # Yelp API ile veri çekmek için kullanılan fonksiyonlar
+├── 📂 assets             # Uygulamanın statik dosyaları (görseller vb.)
+├── 📂 components         # Tekrar kullanılabilir bileşenler
+│   ├── 📝 ResultDetails.js  # Restoran detaylarını gösteren bileşen
+│   ├── 📝 ResultsList.js     # Restoran sonuçlarını listeleyen bileşen
+│   └── 📝 SearchBar.js       # Arama çubuğu bileşeni
+├── 📂 hooks              # Özel React hook'ları
+│   └── 📝 useResults.js     # API sonuçlarını yönetmek için özel hook
+├── 📂 screens            # Uygulamanın ekranları
+│   ├── 📝 ResultsShowScreen.js  # Seçilen restoranın detaylarını gösteren ekran
+│   └── 📝 SearchScreen.js       # Arama ve sonuçları gösteren ekran
+├── 📝 .gitignore         # Git'te takip edilmeyecek dosyalar
+├── 📝 App.js             # Uygulamanın ana bileşeni
+├── 📝 app.json           # Expo uygulama yapılandırması
+├── 📝 babel.config.js    # Babel konfigürasyon dosyası
+├── 📝 package-lock.json  # NPM bağımlılıkları kilit dosyası
+└── 📝 package.json       # Proje bağımlılıkları ve betikleri
 ```
 
